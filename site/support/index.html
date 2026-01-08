@@ -1,10 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - AskHealth AI</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .alert {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #721c24;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Support</h1>
-    <p>Coming soon...</p>
+    <div class="container">
+        <header>
+            <h1>AskHealth AI</h1>
+        </header>
+        
+        <nav>
+            <a href="/">Home</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/terms/">Terms</a>
+            <a href="/support/">Support</a>
+            <a href="/medical/">Medical</a>
+        </nav>
+        
+        <main>
+            <h1>Support</h1>
+            
+            <div class="alert">
+                <strong>⚠️ Medical Emergency:</strong> If you are experiencing a medical emergency, call 911 immediately.
+            </div>
+            
+            <h2>Getting Help</h2>
+            <p>Our support system is designed to help you get the most out of AskHealth AI:</p>
+            
+            <h3>For Technical Issues</h3>
+            <p>For technical support, please visit our GitHub repository issues page. This helps us track and resolve problems efficiently.</p>
+            
+            <h3>What to Include</h3>
+            <p>When reporting an issue, please provide:</p>
+            <ul>
+                <li>Description of the problem</li>
+                <li>Steps to reproduce the issue</li>
+                <li>Your device model and iOS version</li>
+                <li>App version (found in Settings)</li>
+            </ul>
+            
+            <h3>Response Time</h3>
+            <p>We aim to respond to support requests within 2-3 business days. Critical issues are prioritized.</p>
+            
+            <h2>Frequently Asked Questions</h2>
+            <p>Common questions and answers will be added here as we gather user feedback.</p>
+            
+            <h2>Important Reminders</h2>
+            <ul>
+                <li>AskHealth AI is not a medical device or diagnostic tool</li>
+                <li>Always consult healthcare professionals for medical advice</li>
+                <li>Keep your app updated for the best experience</li>
+            </ul>
+        </main>
+        
+        <footer>
+            <p>&copy; <span id="year"></span> AskHealth AI (LLC pending). All rights reserved.</p>
+            <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+        </footer>
+    </div>
 </body>
 </html>

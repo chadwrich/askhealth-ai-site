@@ -1,10 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Disclaimer - AskHealth AI</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #f39c12;
+        }
+        .emergency {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #dc3545;
+            color: #721c24;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Medical Disclaimer</h1>
-    <p>Coming soon...</p>
+    <div class="container">
+        <header>
+            <h1>AskHealth AI</h1>
+        </header>
+        
+        <nav>
+            <a href="/">Home</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/terms/">Terms</a>
+            <a href="/support/">Support</a>
+            <a href="/medical/">Medical</a>
+        </nav>
+        
+        <main>
+            <h1>Medical Disclaimer</h1>
+            
+            <div class="emergency">
+                <h3>🚨 Medical Emergency</h3>
+                <p><strong>If you are experiencing a medical emergency, call 911 immediately.</strong></p>
+                <p>Do not rely on this app for emergency medical situations.</p>
+            </div>
+            
+            <div class="warning">
+                <h3>⚠️ Important Notice</h3>
+                <p><strong>AskHealth AI is not medical advice, not a medical diagnosis tool, and not a medical treatment recommendation.</strong></p>
+            </div>
+            
+            <h2>Not a Medical Device</h2>
+            <p>AskHealth AI is not a medical device and has not been evaluated by the FDA or other medical regulatory agencies. It is not intended to:</p>
+            <ul>
+                <li>Diagnose any medical condition</li>
+                <li>Treat any medical condition</li>
+                <li>Prevent any medical condition</li>
+                <li>Replace professional medical advice</li>
+            </ul>
+            
+            <h2>Informational Purposes Only</h2>
+            <p>The information provided by AskHealth AI is for:</p>
+            <ul>
+                <li>Educational and informational purposes</li>
+                <li>General wellness insights</li>
+                <li>Health data visualization</li>
+                <li>Personal health tracking support</li>
+            </ul>
+            
+            <h2>Consult Healthcare Professionals</h2>
+            <p>Always consult with qualified healthcare professionals for:</p>
+            <ul>
+                <li>Medical advice and recommendations</li>
+                <li>Diagnosis of health conditions</li>
+                <li>Treatment decisions</li>
+                <li>Medication changes</li>
+                <li>Health concerns or symptoms</li>
+            </ul>
+            
+            <h2>No Liability for Health Decisions</h2>
+            <p>AskHealth AI and its developers are not responsible for any health decisions you make based on information from the app. You use this information at your own risk.</p>
+            
+            <h2>Data Accuracy</h2>
+            <p>While we strive for accuracy, health data analysis may contain errors or limitations. Do not make important health decisions based solely on information from this app.</p>
+            
+            <h2>Individual Variation</h2>
+            <p>Health information is highly individual. What applies to others may not apply to you. Your healthcare provider knows your specific situation best.</p>
+        </main>
+        
+        <footer>
+            <p>&copy; <span id="year"></span> AskHealth AI (LLC pending). All rights reserved.</p>
+            <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+        </footer>
+    </div>
 </body>
 </html>

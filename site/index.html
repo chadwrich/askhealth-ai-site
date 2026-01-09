@@ -3,7 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AskHealth AI</title>
+    <title>AskHealth AI - Personal Health Insights from Apple Health Data</title>
+    <meta name="description" content="AI-powered wellness coaching from your Apple Health data. Privacy-first health insights for steps, sleep, nutrition, and fitness. Beta testing available.">
+    <meta name="keywords" content="health app, Apple Health, HealthKit, wellness coaching, AI health insights, fitness tracking, sleep analysis, nutrition guidance">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="AskHealth AI - Personal Health Insights from Apple Health Data">
+    <meta property="og:description" content="AI-powered wellness coaching from your Apple Health data. Privacy-first health insights for steps, sleep, nutrition, and fitness.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.askhealth-ai.com/">
+    <meta property="og:image" content="https://www.askhealth-ai.com/assets/og.png">
+    <meta property="og:site_name" content="AskHealth AI">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AskHealth AI - Personal Health Insights">
+    <meta name="twitter:description" content="AI-powered wellness coaching from your Apple Health data. Privacy-first health insights.">
+    <meta name="twitter:image" content="https://www.askhealth-ai.com/assets/og.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <link rel="stylesheet" href="/css/shared.css">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -99,35 +122,109 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="container">
+        <nav class="primary-nav" role="navigation" aria-label="Main navigation">
+            <a href="/">Home</a>
+            <a href="/how-it-works/">How It Works</a>
+            <a href="/features/">Features</a>
+            <a href="/pricing/">Pricing</a>
+            <a href="/faq/">FAQ</a>
+            <a href="/about/">About</a>
+            <a href="/support/">Support</a>
+            <a href="/legal/">Legal</a>
+        </nav>
+        
         <div class="header">
             <h1>AskHealth AI</h1>
             <p>Personal health insights from your Apple Health data.</p>
             <p><em>Version 1.3</em></p>
         </div>
         
-        <div class="content">
-            <div class="disclaimer">
+        <main id="main-content" class="content">
+            <div class="disclaimer" role="alert">
                 <strong>AskHealth AI does not provide medical advice. For emergencies call 911.</strong>
             </div>
             
-            <div class="nav-buttons">
-                <a href="privacy/">Privacy Policy</a>
-                <a href="terms/">Terms of Use</a>
-                <a href="support/">Support</a>
-                <a href="medical/">Medical Disclaimer</a>
+            <!-- Core Features Overview -->
+            <section class="features-overview">
+                <h2>Your Personal Health Coach</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>🏃‍♂️ Activity Insights</h3>
+                        <p>Track steps, calories, and exercise with AI-powered analysis</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>💤 Sleep & Recovery</h3>
+                        <p>Understand your sleep patterns and recovery needs</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>🍎 Nutrition Guidance</h3>
+                        <p>Get wellness insights from your dietary habits</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>🔒 Privacy First</h3>
+                        <p>Your health data stays private with Apple HealthKit integration</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- How It Works Brief -->
+            <section class="how-it-works-brief">
+                <h2>How It Works</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>Connect your Apple Health data <em>(with your permission)</em></p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>AI analyzes your wellness patterns</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>Get personalized coaching insights</p>
+                    </div>
+                </div>
+                <p class="process-note"><strong>Note:</strong> All analysis is for wellness coaching only, not medical advice.</p>
+            </section>
+            
+            <!-- Trust Signals -->
+            <section class="trust-signals">
+                <div class="trust-item">
+                    <strong>🛡️ Privacy-First Design</strong>
+                    <p>Built with Apple HealthKit. Your data never leaves your control.</p>
+                </div>
+                <div class="trust-item">
+                    <strong>🎯 Wellness Focus</strong>
+                    <p>Coaching and insights, not medical diagnosis or treatment.</p>
+                </div>
+            </section>
+            
+            <!-- Primary CTA -->
+            <div class="cta-section">
+                <a href="#" class="cta cta-primary">Download on TestFlight</a>
+                <a href="/how-it-works/" class="cta cta-secondary">Learn How It Works</a>
             </div>
-        </div>
+            
+            <div class="nav-buttons">
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Use</a>
+                <a href="/support/">Support</a>
+                <a href="/medical/">Medical Disclaimer</a>
+            </div>
+        </main>
         
-        <div class="footer">
+        <footer role="contentinfo">
             <p>&copy; 2025 AskHealth AI</p>
             <p>
-                <a href="privacy/">Privacy</a>
-                <a href="terms/">Terms</a>
-                <a href="support/">Support</a>
-                <a href="medical/">Medical</a>
+                <a href="/privacy/">Privacy</a>
+                <a href="/terms/">Terms</a>
+                <a href="/support/">Support</a>
+                <a href="/medical/">Medical</a>
+                <a href="/legal/">Legal Hub</a>
             </p>
-        </div>
+        </footer>
     </div>
 </body>
 </html>

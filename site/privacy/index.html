@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - AskHealth AI</title>
+    <link rel="stylesheet" href="/css/shared.css">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -56,6 +57,27 @@
             color: #666;
             font-size: 14px;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #f39c12;
+        }
     </style>
 </head>
 <body>
@@ -70,53 +92,253 @@
             <a href="/terms/">Terms</a>
             <a href="/support/">Support</a>
             <a href="/medical/">Medical</a>
+            <a href="/legal/">Legal Hub</a>
         </nav>
         
         <main>
             <h1>Privacy Policy</h1>
-            <p><em>Last updated: January 2025 - v1.3</em></p>
+            <p><em>Effective Date: December 30, 2024<br>
+            Last Updated: December 30, 2024<br>
+            Version: 2.0.1</em></p>
+            
+            <h2>Overview</h2>
+            <p>AskHealth AI ("we," "our," or "us") is committed to being transparent about how we handle your data. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when you use the AskHealth AI mobile application.</p>
+            <p><strong>Important:</strong> This app is currently in beta testing via Apple TestFlight. Some features are still under development.</p>
             
             <h2>Information We Collect</h2>
-            <p>We may collect the following types of information to provide our wellness services:</p>
+            
+            <h3>Account Information</h3>
+            <p>When you use AskHealth AI, we create and store:</p>
             <ul>
-                <li>Account and contact information when you create an account</li>
-                <li>App usage data to improve our services</li>
-                <li>Health-related inputs you provide for wellness analysis</li>
-                <li>Technical information for app functionality and reliability</li>
+                <li><strong>User ID</strong>: A unique identifier for your account</li>
+                <li><strong>Conversation ID</strong>: An identifier for maintaining conversation continuity across sessions</li>
             </ul>
             
-            <h2>How We Use Information</h2>
-            <p>We use collected information to:</p>
+            <h3>Conversation Data</h3>
+            <p>To provide a continuous coaching experience, we store:</p>
             <ul>
-                <li>Provide wellness insights and analysis</li>
-                <li>Improve app functionality and user experience</li>
-                <li>Ensure service reliability and security</li>
-                <li>Communicate with you about the service</li>
+                <li><strong>Conversation History</strong>: Your messages and AI responses</li>
+                <li><strong>Conversation Summaries</strong>: Condensed versions of past conversations for context</li>
+                <li><strong>Turn Counts</strong>: Number of interactions for usage tracking</li>
             </ul>
             
-            <h2>Data Retention</h2>
-            <p>We retain your information only as long as necessary to provide our services and comply with legal obligations. This may include short-term logs for reliability and security purposes.</p>
-            
-            <h2>Information Sharing</h2>
-            <p>We do not sell your personal information. We may share information with:</p>
+            <h3>Subscription and Entitlement Data</h3>
+            <p>We track:</p>
             <ul>
-                <li>Service providers who help us operate the app</li>
-                <li>Legal authorities when required by law</li>
+                <li><strong>Entitlement State</strong>: Whether you are on free, subscribed, or canceled status</li>
+                <li><strong>Subscription Status</strong>: For testing Apple's sandbox billing during beta</li>
             </ul>
             
-            <h2>Security</h2>
-            <p>We implement appropriate security measures to protect your information against unauthorized access, alteration, disclosure, or destruction.</p>
-            
-            <h2>Your Choices</h2>
-            <p>You have the right to:</p>
+            <h3>Health Data (With Your Permission)</h3>
+            <p>If you grant HealthKit access, we may access:</p>
             <ul>
-                <li>Access your personal information</li>
-                <li>Request deletion of your data</li>
-                <li>Opt out of certain communications</li>
+                <li><strong>Activity Data</strong>: Steps, active calories, exercise minutes</li>
+                <li><strong>Body Measurements</strong>: Weight, height</li>
+                <li><strong>Vital Signs</strong>: Heart rate, resting heart rate</li>
+                <li><strong>Sleep Data</strong>: Sleep duration</li>
+                <li><strong>Nutrition Data</strong>: Calories consumed</li>
             </ul>
             
-            <h2>Contact Us</h2>
-            <p>For privacy-related questions, please contact us through our support channels.</p>
+            <h3>Automatically Collected Information</h3>
+            <ul>
+                <li><strong>Device Information</strong>: iOS version, device model, app version</li>
+                <li><strong>Diagnostics</strong>: Crash reports and technical diagnostics to improve app stability</li>
+            </ul>
+            
+            <h2>How We Use Your Information</h2>
+            
+            <h3>Primary Uses</h3>
+            <p>All data we collect is used solely to provide and improve app functionality:</p>
+            <ul>
+                <li><strong>AI Coaching</strong>: Generate personalized wellness coaching responses</li>
+                <li><strong>Conversation Continuity</strong>: Maintain context across sessions so the AI remembers your history</li>
+                <li><strong>Usage Management</strong>: Track turn counts to manage service limits</li>
+                <li><strong>Service Improvement</strong>: Fix bugs and improve the app experience</li>
+            </ul>
+            
+            <h3>AI Processing</h3>
+            <p>Your data is processed by AI services to generate coaching responses:</p>
+            <ul>
+                <li><strong>Models Used</strong>: GPT-3.5-Turbo (for routing) and GPT-4o-mini (for responses)</li>
+                <li><strong>Provider</strong>: OpenAI</li>
+                <li><strong>What's Sent</strong>: Your messages, health metrics, and conversation context</li>
+                <li><strong>Not Used for Training</strong>: Per OpenAI's API data usage policy, data sent via their API is not used to train their public AI models</li>
+            </ul>
+            
+            <h2>Data Storage</h2>
+            
+            <h3>Where Your Data Is Stored</h3>
+            <table>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Storage</th>
+                </tr>
+                <tr>
+                    <td>User ID</td>
+                    <td>Cloud servers (AWS)</td>
+                </tr>
+                <tr>
+                    <td>Conversation ID</td>
+                    <td>Cloud servers (AWS)</td>
+                </tr>
+                <tr>
+                    <td>Conversation History</td>
+                    <td>Cloud servers (AWS)</td>
+                </tr>
+                <tr>
+                    <td>Conversation Summaries</td>
+                    <td>Cloud servers (AWS)</td>
+                </tr>
+                <tr>
+                    <td>Entitlement State</td>
+                    <td>Cloud servers (AWS)</td>
+                </tr>
+                <tr>
+                    <td>Turn Counts</td>
+                    <td>Cloud servers (AWS)</td>
+                </tr>
+                <tr>
+                    <td>Raw Health Metrics</td>
+                    <td>Processed temporarily; not permanently stored</td>
+                </tr>
+            </table>
+            
+            <h3>Data Retention</h3>
+            <ul>
+                <li><strong>Conversation Data</strong>: Retained to provide ongoing coaching continuity</li>
+                <li><strong>Account Data</strong>: Retained while your account is active</li>
+                <li><strong>Raw Health Data</strong>: Processed in real-time for AI responses; not permanently stored</li>
+                <li><strong>Derived Insights</strong>: Summaries or insights derived from health data may be retained as part of conversation history</li>
+            </ul>
+            
+            <h3>Data Security</h3>
+            <ul>
+                <li><strong>Encryption in Transit</strong>: All data transmission uses HTTPS encryption</li>
+                <li><strong>Cloud Infrastructure</strong>: Data is stored on AWS infrastructure</li>
+                <li><strong>Beta Status</strong>: As pre-release software, security features are still under development. We implement reasonable measures to protect your data.</li>
+            </ul>
+            
+            <h2>Health Data Handling</h2>
+            
+            <h3>Apple HealthKit Integration</h3>
+            <ul>
+                <li>We follow Apple's HealthKit privacy requirements</li>
+                <li>You control which health data types to share via iOS Settings</li>
+                <li>You can revoke health data access at any time</li>
+                <li>Health data is only accessed when you actively use the app</li>
+            </ul>
+            
+            <h3>How Health Data Flows</h3>
+            <ol>
+                <li>You ask a health-related question</li>
+                <li>App retrieves relevant metrics from HealthKit (e.g., steps, weight, sleep)</li>
+                <li>Health metrics are sent to our AI service along with your question</li>
+                <li>AI generates a coaching response</li>
+                <li>Response is returned to you</li>
+                <li>Raw health metrics are not permanently stored on our servers</li>
+            </ol>
+            
+            <h3>What We Store vs. What We Don't</h3>
+            <ul>
+                <li><strong>Not Stored</strong>: Raw HealthKit metrics are processed temporarily and not permanently stored</li>
+                <li><strong>May Be Stored</strong>: Derived insights or summaries may be retained as part of your conversation history to provide continuity</li>
+            </ul>
+            
+            <h2>What We Do NOT Do</h2>
+            <ul>
+                <li>❌ <strong>No Data Selling</strong>: We do not sell your personal information</li>
+                <li>❌ <strong>No Advertising</strong>: We do not display ads or share data with advertisers</li>
+                <li>❌ <strong>No Third-Party Analytics SDKs</strong>: We do not use analytics tools that track you</li>
+                <li>❌ <strong>No Cross-App Tracking</strong>: We do not track you across other apps or websites</li>
+                <li>❌ <strong>No AI Training</strong>: Data sent to AI services is not used to train public AI models</li>
+            </ul>
+            
+            <h2>Third-Party Services</h2>
+            
+            <h3>OpenAI</h3>
+            <ul>
+                <li><strong>Purpose</strong>: AI model provider for generating coaching responses</li>
+                <li><strong>Data Shared</strong>: Your messages, health metrics, conversation context</li>
+                <li><strong>Their Policy</strong>: OpenAI's API data usage policy applies</li>
+                <li><strong>Not Used for Training</strong>: Per OpenAI's policy, API data is not used to train their public models</li>
+            </ul>
+            
+            <h3>Apple (HealthKit)</h3>
+            <ul>
+                <li><strong>Purpose</strong>: Source of health data with your permission</li>
+                <li><strong>Their Policy</strong>: Apple's privacy policy applies to HealthKit data</li>
+            </ul>
+            
+            <h3>Amazon Web Services (AWS)</h3>
+            <ul>
+                <li><strong>Purpose</strong>: Cloud infrastructure for data storage and processing</li>
+                <li><strong>Their Policy</strong>: AWS's privacy and security policies apply</li>
+            </ul>
+            
+            <h2>Your Rights and Choices</h2>
+            
+            <h3>Data Control</h3>
+            <ul>
+                <li><strong>Access</strong>: You can request information about what data we have</li>
+                <li><strong>Deletion</strong>: You can request deletion of your account and data</li>
+                <li><strong>HealthKit Permissions</strong>: Manage in iOS Settings > Privacy & Security > Health > AskHealth AI</li>
+            </ul>
+            
+            <h3>How to Exercise Your Rights</h3>
+            <p>Contact us at: support@askhealth-ai.com</p>
+            
+            <h3>Data Portability</h3>
+            <p>We can provide an export of your conversation history upon request.</p>
+            
+            <h2>Children's Privacy</h2>
+            <p>AskHealth AI is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us immediately.</p>
+            
+            <h2>Beta Testing Considerations</h2>
+            <p>As a TestFlight beta app:</p>
+            <ul>
+                <li>Features are still being developed</li>
+                <li>Data handling practices may evolve</li>
+                <li>We will notify you of significant changes to this policy</li>
+                <li>No real payment information is collected (sandbox billing only)</li>
+            </ul>
+            
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy as the app develops. We will notify you of significant changes through:</p>
+            <ul>
+                <li>In-app notifications</li>
+                <li>Updated effective date on this policy</li>
+            </ul>
+            <p>We encourage you to review this policy periodically.</p>
+            
+            <div class="warning">
+                <h3>Medical Disclaimer</h3>
+                <p><strong>IMPORTANT</strong>: AskHealth AI is not a medical device and does not provide medical advice, diagnosis, or treatment. The app is designed for wellness coaching and educational purposes only. Always consult qualified healthcare professionals for medical advice.</p>
+            </div>
+            
+            <h2>Contact Information</h2>
+            <p>For questions about this Privacy Policy or your data:</p>
+            <p><strong>Email:</strong> support@askhealth-ai.com</p>
+            
+            <h2>Legal Basis for Processing (GDPR)</h2>
+            <p>For users in the European Union, our legal basis for processing includes:</p>
+            <ul>
+                <li><strong>Consent</strong>: You consent to data processing when you create an account and use the app</li>
+                <li><strong>Contract</strong>: Processing necessary to provide the coaching service</li>
+                <li><strong>Legitimate Interest</strong>: Improving our services and ensuring security</li>
+            </ul>
+            
+            <h2>California Privacy Rights (CCPA)</h2>
+            <p>California residents have the right to:</p>
+            <ul>
+                <li>Know what personal information is collected</li>
+                <li>Request deletion of personal information</li>
+                <li>Opt-out of sale of personal information (we do not sell data)</li>
+                <li>Non-discrimination for exercising privacy rights</li>
+            </ul>
+            
+            <hr>
+            
+            <p><strong>Summary</strong>: We store your account info, conversation history, and usage data to provide a continuous coaching experience. Raw health data is processed temporarily but not permanently stored; derived summaries may be retained. Data sent to AI services is not used to train public AI models. We don't sell your data, show ads, or track you across apps.</p>
         </main>
         
         <footer>

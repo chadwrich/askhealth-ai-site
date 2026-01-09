@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use - AskHealth AI</title>
+    <link rel="stylesheet" href="/css/shared.css">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -56,6 +57,23 @@
             color: #666;
             font-size: 14px;
         }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #f39c12;
+        }
+        .emergency {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #dc3545;
+            color: #721c24;
+        }
     </style>
 </head>
 <body>
@@ -70,44 +88,323 @@
             <a href="/terms/">Terms</a>
             <a href="/support/">Support</a>
             <a href="/medical/">Medical</a>
+            <a href="/legal/">Legal Hub</a>
         </nav>
         
         <main>
             <h1>Terms of Use</h1>
-            <p><em>Last updated: January 2025 - v1.1</em></p>
+            <p><em>Effective Date: December 30, 2024<br>
+            Last Updated: December 30, 2024<br>
+            Version: 2.0.1</em></p>
             
-            <h2>Acceptance of Terms</h2>
-            <p>By using AskHealth AI, you agree to these Terms of Use. If you do not agree, please do not use our service.</p>
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using AskHealth AI ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.</p>
             
-            <h2>No Medical Advice Disclaimer</h2>
-            <p><strong>AskHealth AI does not provide medical advice, diagnosis, or treatment.</strong> Our service is for informational and wellness purposes only. Always consult qualified healthcare professionals for medical decisions.</p>
+            <h2>2. Beta Testing Program</h2>
             
-            <h2>User Responsibilities</h2>
-            <p>By using AskHealth AI, you are responsible for:</p>
+            <h3>TestFlight Distribution</h3>
+            <p>AskHealth AI is currently distributed through Apple's TestFlight program for beta testing purposes. By participating:</p>
             <ul>
-                <li>Providing accurate information</li>
-                <li>Using the service appropriately</li>
-                <li>Maintaining the security of your account</li>
-                <li>Seeking professional medical care when needed</li>
+                <li>You acknowledge this is pre-release software that may contain bugs or errors</li>
+                <li>Features may change, be added, or removed without notice</li>
+                <li>The App may be discontinued at any time</li>
+                <li>You are part of a limited group of invited testers</li>
             </ul>
             
-            <h2>Acceptable Use</h2>
-            <p>You agree not to:</p>
+            <h3>No Payment During Beta</h3>
             <ul>
-                <li>Use the service for illegal purposes</li>
-                <li>Attempt to harm or disrupt the service</li>
-                <li>Share your account with others</li>
-                <li>Rely on the service for medical emergencies</li>
+                <li>All subscription features are tested using Apple's sandbox billing environment</li>
+                <li>No real money is charged during TestFlight testing</li>
+                <li>Subscription states and entitlements are for testing purposes only</li>
             </ul>
             
-            <h2>Disclaimers & Limitation of Liability</h2>
-            <p>The service is provided "as is" without warranties. We are not liable for any damages arising from your use of the service. This includes but is not limited to health decisions made based on app information.</p>
+            <h2>3. User Accounts</h2>
             
-            <h2>Changes to Terms</h2>
-            <p>We may update these terms from time to time. Continued use of the service constitutes acceptance of updated terms.</p>
+            <h3>Account Creation</h3>
+            <ul>
+                <li>You must create an account to use the App</li>
+                <li>Each user receives a unique user identifier</li>
+                <li>Anonymous usage is not supported</li>
+                <li>You are responsible for maintaining the security of your account</li>
+            </ul>
             
-            <h2>Contact</h2>
-            <p>For questions about these terms, please contact us through our support channels.</p>
+            <h3>Account Data</h3>
+            <p>We store the following account-related information:</p>
+            <ul>
+                <li>Your user identifier</li>
+                <li>Conversation identifiers for session continuity</li>
+                <li>Subscription/entitlement state (for testing purposes)</li>
+                <li>Usage metrics including turn counts</li>
+            </ul>
+            
+            <h2>4. Medical Disclaimer and Limitations</h2>
+            
+            <div class="warning">
+                <h3>NOT A MEDICAL DEVICE</h3>
+                <p>AskHealth AI is <strong>NOT</strong> a medical device, diagnostic tool, or medical service. The App is designed for wellness coaching, educational, and informational purposes only.</p>
+            </div>
+            
+            <h3>NO MEDICAL ADVICE</h3>
+            <ul>
+                <li>The App does not provide medical advice, diagnosis, or treatment</li>
+                <li>AI responses are for wellness coaching and educational purposes only</li>
+                <li>Always consult qualified healthcare professionals for medical concerns</li>
+                <li>Never disregard professional medical advice based on App content</li>
+            </ul>
+            
+            <div class="emergency">
+                <h3>EMERGENCY SITUATIONS</h3>
+                <ul>
+                    <li>For medical emergencies, call 911 or your local emergency number immediately</li>
+                    <li>Do not rely on the App for emergency medical situations</li>
+                    <li>The App is not designed to detect or respond to medical emergencies</li>
+                </ul>
+            </div>
+            
+            <h3>AI LIMITATIONS</h3>
+            <ul>
+                <li>AI responses may contain errors, inaccuracies, or outdated information</li>
+                <li>AI cannot replace human medical judgment or professional healthcare</li>
+                <li>AI responses are based on general wellness principles, not your specific medical history</li>
+            </ul>
+            
+            <h2>5. Service Description</h2>
+            
+            <h3>Core Functionality</h3>
+            <p>AskHealth AI provides:</p>
+            <ul>
+                <li>Conversational AI wellness coaching</li>
+                <li>Health data analysis from Apple HealthKit (with your permission)</li>
+                <li>Persistent conversation awareness across sessions</li>
+            </ul>
+            
+            <h3>Usage Limits</h3>
+            <ul>
+                <li>The App implements turn limits (daily or per-period caps)</li>
+                <li>These limits may affect your ability to interact with the AI coach</li>
+                <li>Limits may be adjusted during the beta testing period</li>
+            </ul>
+            
+            <h3>AI Processing</h3>
+            <ul>
+                <li>Your queries are processed using cloud-based AI services provided by OpenAI</li>
+                <li>Data sent to AI services is used solely to generate your coaching responses</li>
+                <li>Per OpenAI's API data usage policy, data sent via their API is not used to train their public AI models</li>
+                <li>Health data is sent to AI services for analysis and response generation</li>
+            </ul>
+            
+            <h2>6. User Responsibilities</h2>
+            
+            <h3>Appropriate Use</h3>
+            <p>You agree to use the App only for:</p>
+            <ul>
+                <li>Personal wellness and fitness tracking</li>
+                <li>Educational health information</li>
+                <li>General wellness coaching and motivation</li>
+            </ul>
+            
+            <h3>Prohibited Use</h3>
+            <p>You agree NOT to use the App for:</p>
+            <ul>
+                <li>Medical diagnosis or treatment decisions</li>
+                <li>Emergency medical situations</li>
+                <li>Replacing professional medical care</li>
+                <li>Making medication decisions</li>
+                <li>Treating serious health conditions</li>
+                <li>Any unlawful purpose</li>
+            </ul>
+            
+            <h3>Health Data Accuracy</h3>
+            <ul>
+                <li>You are responsible for the accuracy of health data you provide</li>
+                <li>Inaccurate data may result in inappropriate AI responses</li>
+                <li>Always verify health metrics with medical-grade devices when accuracy is critical</li>
+            </ul>
+            
+            <h2>7. Data Storage and Retention</h2>
+            
+            <h3>What We Store</h3>
+            <p>To provide the conversational coaching experience, we store:</p>
+            <ul>
+                <li>Your user identifier</li>
+                <li>Conversation identifiers</li>
+                <li>Conversation history and summaries (to maintain context across sessions)</li>
+                <li>Entitlement/subscription state</li>
+                <li>Turn counts and usage metrics</li>
+            </ul>
+            
+            <h3>Health Data</h3>
+            <ul>
+                <li>Raw health metrics from HealthKit are processed temporarily and not permanently stored on our servers</li>
+                <li>Derived insights or summaries may be retained as part of your conversation history</li>
+            </ul>
+            
+            <h3>How Long We Store It</h3>
+            <ul>
+                <li>Conversation data is retained to provide continuity in your coaching experience</li>
+                <li>Data retention policies may change; we will notify you of significant changes</li>
+                <li>You may request deletion of your data by contacting us</li>
+            </ul>
+            
+            <h3>Where Data Is Stored</h3>
+            <ul>
+                <li>Data is stored on cloud servers (AWS infrastructure)</li>
+                <li>Data is transmitted securely using encryption</li>
+            </ul>
+            
+            <h2>8. Subscriptions and Billing</h2>
+            
+            <h3>Beta Testing Period</h3>
+            <ul>
+                <li>During TestFlight beta, all billing uses Apple's sandbox environment</li>
+                <li>No real charges are made to your payment method</li>
+                <li>Subscription features are for testing the user experience only</li>
+            </ul>
+            
+            <h3>Entitlement States</h3>
+            <ul>
+                <li>Your access level may change based on subscription state (free, subscribed, canceled)</li>
+                <li>Entitlement changes affect available features and usage limits</li>
+            </ul>
+            
+            <h3>Future Billing</h3>
+            <ul>
+                <li>If the App launches publicly, real billing will be implemented</li>
+                <li>You will be clearly notified before any real charges apply</li>
+                <li>Updated terms will be provided before public launch</li>
+            </ul>
+            
+            <h2>9. Limitation of Liability</h2>
+            
+            <h3>NO WARRANTIES</h3>
+            <p>The App is provided "AS IS" without warranties of any kind, express or implied, including but not limited to:</p>
+            <ul>
+                <li>Accuracy of AI responses</li>
+                <li>Fitness for medical purposes</li>
+                <li>Uninterrupted or error-free operation</li>
+            </ul>
+            
+            <h3>BETA SOFTWARE DISCLAIMER</h3>
+            <p>As beta software:</p>
+            <ul>
+                <li>Bugs, crashes, and data loss may occur</li>
+                <li>Features may not work as expected</li>
+                <li>The App may become unavailable without notice</li>
+            </ul>
+            
+            <h3>LIABILITY LIMITATIONS</h3>
+            <p>To the maximum extent permitted by law, AskHealth AI and its developers shall not be liable for:</p>
+            <ul>
+                <li>Any health-related decisions made based on App content</li>
+                <li>Injuries, illnesses, or health complications</li>
+                <li>Inaccurate, incomplete, or outdated AI responses</li>
+                <li>Technical failures or data loss</li>
+                <li>Any direct, indirect, incidental, or consequential damages</li>
+            </ul>
+            
+            <h3>MAXIMUM LIABILITY</h3>
+            <p>In no event shall our total liability exceed the amount you paid for the App (if any) in the 12 months preceding the claim. During beta testing, this amount is zero.</p>
+            
+            <h2>10. Security</h2>
+            
+            <h3>Beta Security</h3>
+            <p>As pre-release software, security features are still under development. We implement reasonable measures to protect your data, but cannot guarantee complete security during the beta period.</p>
+            
+            <h3>Your Responsibility</h3>
+            <ul>
+                <li>Keep your device secure</li>
+                <li>Do not share your account access with others</li>
+                <li>Report any security concerns to us immediately</li>
+            </ul>
+            
+            <h2>11. Privacy</h2>
+            <p>Your privacy is important to us. Please review our Privacy Policy for details on how we collect, use, and protect your information. Key points:</p>
+            <ul>
+                <li>We store conversation history to provide coaching continuity</li>
+                <li>Raw health data is processed temporarily; derived summaries may be retained</li>
+                <li>Data sent to AI services is not used to train public AI models</li>
+                <li>We do not sell your data</li>
+                <li>We do not display ads</li>
+                <li>We do not track you across apps or websites</li>
+            </ul>
+            
+            <h2>12. Intellectual Property</h2>
+            
+            <h3>App Ownership</h3>
+            <p>AskHealth AI, including all content, features, and functionality, is owned by the developer and protected by copyright, trademark, and other intellectual property laws.</p>
+            
+            <h3>User License</h3>
+            <p>You are granted a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes during the beta testing period.</p>
+            
+            <h2>13. Modifications and Termination</h2>
+            
+            <h3>Terms Updates</h3>
+            <p>We may modify these Terms at any time. Continued use of the App after changes constitutes acceptance of new Terms. We will notify you of significant changes.</p>
+            
+            <h3>Service Changes</h3>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Modify or discontinue App features</li>
+                <li>Update AI models and responses</li>
+                <li>Change usage limits</li>
+                <li>Terminate the beta program</li>
+                <li>Require updated terms acceptance</li>
+            </ul>
+            
+            <h3>User Termination</h3>
+            <p>You may stop using the App at any time. We may terminate your access for violation of these Terms or at our discretion during the beta period.</p>
+            
+            <h2>14. Indemnification</h2>
+            <p>You agree to indemnify and hold harmless AskHealth AI and its developers from any claims, damages, or expenses arising from:</p>
+            <ul>
+                <li>Your use of the App</li>
+                <li>Your violation of these Terms</li>
+                <li>Your health-related decisions based on App content</li>
+                <li>Any inaccurate health data you provide</li>
+            </ul>
+            
+            <h2>15. Dispute Resolution</h2>
+            
+            <h3>Governing Law</h3>
+            <p>These Terms are governed by the laws of the State of Washington, United States, without regard to conflict of law principles.</p>
+            
+            <h3>Informal Resolution</h3>
+            <p>Before initiating formal proceedings, you agree to contact us to attempt informal resolution.</p>
+            
+            <h3>Arbitration</h3>
+            <p>Any disputes shall be resolved through binding arbitration rather than court proceedings, except for:</p>
+            <ul>
+                <li>Small claims court matters</li>
+                <li>Intellectual property disputes</li>
+                <li>Emergency injunctive relief</li>
+            </ul>
+            
+            <h3>Class Action Waiver</h3>
+            <p>You agree to resolve disputes individually and waive the right to participate in class action lawsuits.</p>
+            
+            <h3>Consumer Protection</h3>
+            <p>Nothing in these Terms limits any rights you may have under applicable consumer protection laws that cannot be waived by contract.</p>
+            
+            <h2>16. Severability</h2>
+            <p>If any provision of these Terms is found unenforceable, the remaining provisions shall remain in full force and effect.</p>
+            
+            <h2>17. Contact Information</h2>
+            <p>For questions about these Terms:</p>
+            <p><strong>Email:</strong> support@askhealth-ai.com</p>
+            
+            <h2>18. Acknowledgment</h2>
+            <p>By using AskHealth AI, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use and understand:</p>
+            <ul>
+                <li>This is beta software with limitations</li>
+                <li>The App is for wellness coaching only, not medical advice</li>
+                <li>Your conversation data is stored to provide service continuity</li>
+            </ul>
+            
+            <hr>
+            
+            <div class="warning">
+                <p><strong>IMPORTANT REMINDER</strong>: AskHealth AI is for wellness and educational purposes only. Always consult qualified healthcare professionals for medical advice, diagnosis, and treatment.</p>
+            </div>
         </main>
         
         <footer>

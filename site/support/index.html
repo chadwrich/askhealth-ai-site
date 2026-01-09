@@ -16,206 +16,175 @@
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/shared.css">
-    <style>
-        .support-section {
-            background: white;
-            border-radius: 8px;
-            padding: 25px;
-            margin: 20px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .contact-method {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 15px 0;
-            transition: background-color 0.2s;
-        }
-        .contact-method:hover {
-            background: #e9ecef;
-        }
-        .contact-method h4 {
-            margin-top: 0;
-            color: #667eea;
-        }
-        .emergency-alert {
-            background: #f8d7da;
-            border: 1px solid #f5c6cb;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 20px 0;
-            color: #721c24;
-            border-left: 5px solid #dc3545;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <nav class="primary-nav">
-            <a href="/">Home</a>
-            <a href="/how-it-works/">How It Works</a>
-            <a href="/features/">Features</a>
-            <a href="/pricing/">Pricing</a>
-            <a href="/faq/">FAQ</a>
-            <a href="/about/">About</a>
-            <a href="/support/">Support</a>
-            <a href="/legal/">Legal</a>
-        </nav>
-        
-        <header>
-            <h1>Support</h1>
-            <p>Get help with AskHealth AI wellness coaching</p>
-        </header>
-        
-        <main>
-            <div class="emergency-alert">
-                <h3>🚨 Medical Emergency</h3>
-                <p><strong>If you are experiencing a medical emergency, call 911 immediately.</strong></p>
-                <p>Do not rely on AskHealth AI for emergency medical situations. This app provides wellness coaching only, not medical advice.</p>
-            </div>
+    <div class="page">
+        <div class="container">
+            <nav class="primary-nav">
+                <a href="/">Home</a>
+                <a href="/how-it-works/">How It Works</a>
+                <a href="/features/">Features</a>
+                <a href="/pricing/">Pricing</a>
+                <a href="/faq/">FAQ</a>
+                <a href="/about/">About</a>
+                <a href="/support/" aria-current="page">Support</a>
+                <a href="/legal/">Legal</a>
+            </nav>
             
-            <section class="support-section">
-                <h2>📞 Getting Help</h2>
-                <p>Choose the best support option for your needs:</p>
-                
-                <div class="contact-method">
-                    <h4>📧 Email Support</h4>
-                    <p><strong>support@askhealth-ai.com</strong></p>
-                    <p>For technical issues, account questions, or general inquiries. We respond within 2-3 business days.</p>
+            <header>
+                <h1>Support</h1>
+                <p>Get help with AskHealth AI wellness coaching</p>
+            </header>
+            
+            <main>
+                <div class="alert">
+                    <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-siren"></use></svg>Medical Emergency</h3>
+                    <p><strong>If you are experiencing a medical emergency, call 911 immediately.</strong></p>
+                    <p>Do not rely on AskHealth AI for emergency medical situations. This app provides wellness coaching only, not medical advice.</p>
                 </div>
                 
-                <div class="contact-method">
-                    <h4>❓ FAQ Section</h4>
-                    <p><a href="/faq/" class="cta cta-secondary">Visit FAQ Page</a></p>
-                    <p>Find answers to common questions about privacy, HealthKit integration, beta testing, and more.</p>
-                </div>
+                <section class="section">
+                    <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-mail"></use></svg>Getting Help</h2>
+                    <p>Choose the best support option for your needs:</p>
+                    
+                    <div class="feature-card">
+                        <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-mail"></use></svg>Email Support</h3>
+                        <p><strong>support@askhealth-ai.com</strong></p>
+                        <p>For technical issues, account questions, or general inquiries. We respond within 2-3 business days.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-life-buoy"></use></svg>FAQ Section</h3>
+                        <p><a href="/faq/" class="cta cta-secondary">Visit FAQ Page</a></p>
+                        <p>Find answers to common questions about privacy, HealthKit integration, beta testing, and more.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🐛 Technical Issues</h3>
+                        <p>For bugs, crashes, or technical problems, please include:</p>
+                        <ul>
+                            <li>Description of the problem</li>
+                            <li>Steps to reproduce the issue</li>
+                            <li>Your device model and iOS version</li>
+                            <li>App version (found in Settings)</li>
+                        </ul>
+                        <p>Report via email to <strong>support@askhealth-ai.com</strong></p>
+                    </div>
+                </section>
                 
-                <div class="contact-method">
-                    <h4>🐛 Technical Issues</h4>
-                    <p>For bugs, crashes, or technical problems, please include:</p>
+                <section class="section">
+                    <h2>🧪 Beta Testing Support</h2>
+                    <p>As a beta tester, you're helping us improve AskHealth AI:</p>
+                    
+                    <div class="feature-card">
+                        <h3>🔄 Beta Feedback</h3>
+                        <p>Your feedback is invaluable for improving the app:</p>
+                        <ul>
+                            <li>Report bugs or unexpected behavior</li>
+                            <li>Suggest feature improvements</li>
+                            <li>Share your wellness coaching experience</li>
+                            <li>Let us know what works well</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>📱 TestFlight Issues</h3>
+                        <p>Problems with TestFlight installation or updates:</p>
+                        <ul>
+                            <li>Check your TestFlight app for updates</li>
+                            <li>Ensure you have iOS 14.0 or later</li>
+                            <li>Contact us if you can't access the beta</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2>🔒 Privacy & Data Questions</h2>
+                    <p>Questions about your data and privacy:</p>
+                    
+                    <div class="feature-card">
+                        <h3>📋 Privacy Policy</h3>
+                        <p><a href="/privacy/" class="cta cta-secondary">Read Privacy Policy</a></p>
+                        <p>Comprehensive information about how we handle your data.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>⚙️ HealthKit Permissions</h3>
+                        <p>To manage your health data permissions:</p>
+                        <ul>
+                            <li>Go to iOS Settings > Privacy & Security > Health</li>
+                            <li>Select "AskHealth AI"</li>
+                            <li>Turn data types on or off as desired</li>
+                            <li>Changes take effect immediately</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🗑️ Data Deletion</h3>
+                        <p>To request deletion of your account and data, contact <strong>support@askhealth-ai.com</strong> with your request.</p>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2>📚 Additional Resources</h2>
+                    
+                    <div class="feature-card">
+                        <h3>📖 How It Works</h3>
+                        <p><a href="/how-it-works/" class="cta cta-secondary">Learn How It Works</a></p>
+                        <p>Understand the 3-step process and privacy safeguards.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>⚖️ Legal Information</h3>
+                        <p><a href="/legal/" class="cta cta-secondary">Visit Legal Hub</a></p>
+                        <p>Access all legal documents, terms, and compliance information.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>ℹ️ About Us</h3>
+                        <p><a href="/about/" class="cta cta-secondary">Learn About Our Mission</a></p>
+                        <p>Our privacy-first philosophy and development approach.</p>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2>⏱️ Response Times</h2>
                     <ul>
-                        <li>Description of the problem</li>
-                        <li>Steps to reproduce the issue</li>
-                        <li>Your device model and iOS version</li>
-                        <li>App version (found in Settings)</li>
+                        <li><strong>Email Support:</strong> 2-3 business days</li>
+                        <li><strong>Critical Issues:</strong> Prioritized for faster response</li>
+                        <li><strong>Beta Feedback:</strong> Acknowledged within 1 week</li>
+                        <li><strong>Privacy Requests:</strong> Processed within 30 days</li>
                     </ul>
-                    <p>Report via email to <strong>support@askhealth-ai.com</strong></p>
-                </div>
-            </section>
-            
-            <section class="support-section">
-                <h2>🧪 Beta Testing Support</h2>
-                <p>As a beta tester, you're helping us improve AskHealth AI:</p>
+                </section>
                 
-                <div class="contact-method">
-                    <h4>🔄 Beta Feedback</h4>
-                    <p>Your feedback is invaluable for improving the app:</p>
+                <div class="callout">
+                    <strong>⚠️ Important Reminders:</strong>
                     <ul>
-                        <li>Report bugs or unexpected behavior</li>
-                        <li>Suggest feature improvements</li>
-                        <li>Share your wellness coaching experience</li>
-                        <li>Let us know what works well</li>
+                        <li>AskHealth AI provides wellness coaching only, not medical advice</li>
+                        <li>For medical emergencies, call 911 immediately</li>
+                        <li>Always consult healthcare professionals for medical concerns</li>
+                        <li>Keep your app updated for the best experience</li>
                     </ul>
                 </div>
                 
-                <div class="contact-method">
-                    <h4>📱 TestFlight Issues</h4>
-                    <p>Problems with TestFlight installation or updates:</p>
-                    <ul>
-                        <li>Check your TestFlight app for updates</li>
-                        <li>Ensure you have iOS 14.0 or later</li>
-                        <li>Contact us if you can't access the beta</li>
-                    </ul>
+                <div class="cta-row">
+                    <a href="/faq/" class="cta cta-primary">Visit FAQ</a>
+                    <a href="mailto:support@askhealth-ai.com" class="cta cta-secondary">Email Support</a>
                 </div>
-            </section>
+            </main>
             
-            <section class="support-section">
-                <h2>🔒 Privacy & Data Questions</h2>
-                <p>Questions about your data and privacy:</p>
-                
-                <div class="contact-method">
-                    <h4>📋 Privacy Policy</h4>
-                    <p><a href="/privacy/" class="cta cta-secondary">Read Privacy Policy</a></p>
-                    <p>Comprehensive information about how we handle your data.</p>
-                </div>
-                
-                <div class="contact-method">
-                    <h4>⚙️ HealthKit Permissions</h4>
-                    <p>To manage your health data permissions:</p>
-                    <ul>
-                        <li>Go to iOS Settings > Privacy & Security > Health</li>
-                        <li>Select "AskHealth AI"</li>
-                        <li>Turn data types on or off as desired</li>
-                        <li>Changes take effect immediately</li>
-                    </ul>
-                </div>
-                
-                <div class="contact-method">
-                    <h4>🗑️ Data Deletion</h4>
-                    <p>To request deletion of your account and data, contact <strong>support@askhealth-ai.com</strong> with your request.</p>
-                </div>
-            </section>
-            
-            <section class="support-section">
-                <h2>📚 Additional Resources</h2>
-                
-                <div class="contact-method">
-                    <h4>📖 How It Works</h4>
-                    <p><a href="/how-it-works/" class="cta cta-secondary">Learn How It Works</a></p>
-                    <p>Understand the 3-step process and privacy safeguards.</p>
-                </div>
-                
-                <div class="contact-method">
-                    <h4>⚖️ Legal Information</h4>
-                    <p><a href="/legal/" class="cta cta-secondary">Visit Legal Hub</a></p>
-                    <p>Access all legal documents, terms, and compliance information.</p>
-                </div>
-                
-                <div class="contact-method">
-                    <h4>ℹ️ About Us</h4>
-                    <p><a href="/about/" class="cta cta-secondary">Learn About Our Mission</a></p>
-                    <p>Our privacy-first philosophy and development approach.</p>
-                </div>
-            </section>
-            
-            <section class="support-section">
-                <h2>⏱️ Response Times</h2>
-                <ul>
-                    <li><strong>Email Support:</strong> 2-3 business days</li>
-                    <li><strong>Critical Issues:</strong> Prioritized for faster response</li>
-                    <li><strong>Beta Feedback:</strong> Acknowledged within 1 week</li>
-                    <li><strong>Privacy Requests:</strong> Processed within 30 days</li>
-                </ul>
-            </section>
-            
-            <div class="disclaimer">
-                <strong>⚠️ Important Reminders:</strong>
-                <ul>
-                    <li>AskHealth AI provides wellness coaching only, not medical advice</li>
-                    <li>For medical emergencies, call 911 immediately</li>
-                    <li>Always consult healthcare professionals for medical concerns</li>
-                    <li>Keep your app updated for the best experience</li>
-                </ul>
-            </div>
-            
-            <div class="cta-section">
-                <a href="/faq/" class="cta cta-primary">Visit FAQ</a>
-                <a href="mailto:support@askhealth-ai.com" class="cta cta-secondary">Email Support</a>
-            </div>
-        </main>
-        
-        <footer>
-            <p>&copy; <span id="year"></span> AskHealth AI (LLC pending). All rights reserved.</p>
-            <p>
-                <a href="/privacy/">Privacy</a>
-                <a href="/terms/">Terms</a>
-                <a href="/support/">Support</a>
-                <a href="/medical/">Medical</a>
-                <a href="/legal/">Legal Hub</a>
-            </p>
-            <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-        </footer>
+            <footer>
+                <p>&copy; <span id="year"></span> AskHealth AI (LLC pending). All rights reserved.</p>
+                <p>
+                    <a href="/privacy/">Privacy</a>
+                    <a href="/terms/">Terms</a>
+                    <a href="/support/">Support</a>
+                    <a href="/medical/">Medical</a>
+                    <a href="/legal/">Legal Hub</a>
+                </p>
+                <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+            </footer>
+        </div>
     </div>
 </body>
 </html>

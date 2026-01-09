@@ -16,47 +16,10 @@
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/shared.css">
-    <style>
-        .legal-document {
-            background: white;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            padding: 25px;
-            margin: 20px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .legal-document:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-        .legal-document h3 {
-            color: #667eea;
-            margin-top: 0;
-        }
-        .last-updated {
-            color: #666;
-            font-size: 0.9em;
-            font-style: italic;
-        }
-        .compliance-section {
-            background: #e8f5e8;
-            border-left: 4px solid #28a745;
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 4px;
-        }
-        .contact-legal {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 4px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="page">
+        <div class="container">
         <nav class="primary-nav">
             <a href="/">Home</a>
             <a href="/how-it-works/">How It Works</a>
@@ -65,7 +28,7 @@
             <a href="/faq/">FAQ</a>
             <a href="/about/">About</a>
             <a href="/support/">Support</a>
-            <a href="/legal/">Legal</a>
+            <a href="/legal/" aria-current="page">Legal</a>
         </nav>
         
         <header>
@@ -75,13 +38,13 @@
         
         <main>
             <section class="legal-documents">
-                <h2>📋 Legal Documents</h2>
+                <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-file-text"></use></svg>Legal Documents</h2>
                 <p>All legal documents governing your use of AskHealth AI:</p>
                 
-                <div class="legal-document">
-                    <h3>🔒 Privacy Policy</h3>
+                <div class="feature-card">
+                    <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-shield-check"></use></svg>Privacy Policy</h3>
                     <p>Comprehensive information about how we collect, use, and protect your personal and health data.</p>
-                    <p class="last-updated">Last updated: January 2025 - v1.3</p>
+                    <p style="color: var(--color-text-muted); font-size: 14px; font-style: italic;">Last updated: January 2025 - v1.3</p>
                     <ul>
                         <li>Data collection and usage</li>
                         <li>Apple HealthKit integration</li>
@@ -92,10 +55,10 @@
                     <a href="/privacy/" class="cta cta-secondary">Read Privacy Policy</a>
                 </div>
                 
-                <div class="legal-document">
-                    <h3>📜 Terms of Use</h3>
+                <div class="feature-card">
+                    <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-file-text"></use></svg>Terms of Use</h3>
                     <p>Terms and conditions governing your use of AskHealth AI wellness coaching services.</p>
-                    <p class="last-updated">Last updated: January 2025 - v1.1</p>
+                    <p style="color: var(--color-text-muted); font-size: 14px; font-style: italic;">Last updated: January 2025 - v1.1</p>
                     <ul>
                         <li>Service description and limitations</li>
                         <li>Medical disclaimer and boundaries</li>
@@ -106,10 +69,10 @@
                     <a href="/terms/" class="cta cta-secondary">Read Terms of Use</a>
                 </div>
                 
-                <div class="legal-document">
-                    <h3>🏥 Medical Disclaimer</h3>
+                <div class="feature-card">
+                    <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-triangle-alert"></use></svg>Medical Disclaimer</h3>
                     <p>Important information about the wellness coaching scope and medical advice limitations.</p>
-                    <p class="last-updated">Last updated: January 2025</p>
+                    <p style="color: var(--color-text-muted); font-size: 14px; font-style: italic;">Last updated: January 2025</p>
                     <ul>
                         <li>Not a medical device or diagnostic tool</li>
                         <li>Emergency contact information (911)</li>
@@ -121,8 +84,8 @@
                 </div>
             </section>
             
-            <div class="compliance-section">
-                <h2>✅ Compliance Statements</h2>
+            <div class="section-panel">
+                <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-badge-check"></use></svg>Compliance Statements</h2>
                 <h3>Health Data Privacy</h3>
                 <ul>
                     <li><strong>Apple HealthKit Compliance:</strong> Built following Apple's HealthKit privacy requirements</li>
@@ -147,7 +110,7 @@
             
             <section class="version-tracking">
                 <h2>📅 Document Version History</h2>
-                <div class="legal-document">
+                <div class="feature-card">
                     <h3>Current Versions</h3>
                     <ul>
                         <li><strong>Privacy Policy:</strong> v1.3 (January 2025)</li>
@@ -158,7 +121,7 @@
                 </div>
             </section>
             
-            <div class="contact-legal">
+            <div class="callout">
                 <h3>📧 Legal Questions & Contact</h3>
                 <p><strong>For legal inquiries, privacy questions, or compliance matters:</strong></p>
                 <ul>
@@ -180,7 +143,7 @@
             
             <section class="additional-resources">
                 <h2>🔗 Additional Resources</h2>
-                <div class="legal-document">
+                <div class="feature-card">
                     <h3>Related Information</h3>
                     <ul>
                         <li><a href="/support/">Support Center</a> - Technical help and general questions</li>
@@ -191,11 +154,11 @@
                 </div>
             </section>
             
-            <div class="disclaimer">
+            <div class="callout">
                 <strong>⚠️ Important:</strong> These legal documents govern your use of AskHealth AI. By using our service, you agree to these terms. Please review them carefully and contact us with any questions.
             </div>
             
-            <div class="cta-section">
+            <div class="cta-row">
                 <a href="/support/" class="cta cta-primary">Contact Legal Team</a>
                 <a href="/privacy/" class="cta cta-secondary">Review Privacy Policy</a>
             </div>
@@ -212,6 +175,7 @@
             </p>
             <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
         </footer>
+        </div>
     </div>
 </body>
 </html>

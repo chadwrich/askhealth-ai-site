@@ -17,309 +17,300 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/shared.css">
     <style>
-        .faq-section {
-            margin: 30px 0;
-        }
         details {
-            background: white;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            margin: 10px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            margin: 16px 0;
         }
         summary {
             padding: 20px;
             cursor: pointer;
             font-weight: 600;
-            color: #2c3e50;
-            border-radius: 8px;
-            transition: background-color 0.2s;
+            color: var(--color-text);
+            border-radius: var(--radius-sm);
+            transition: background-color 0.15s ease;
         }
         summary:hover {
-            background: #f8f9fa;
+            background: var(--color-border-light);
         }
         details[open] summary {
-            background: #667eea;
+            background: var(--color-primary);
             color: white;
-            border-bottom: 1px solid #dee2e6;
-            border-radius: 8px 8px 0 0;
+            border-bottom: 1px solid var(--color-border);
+            border-radius: var(--radius-sm) var(--radius-sm) 0 0;
         }
         .faq-content {
             padding: 20px;
-            border-top: 1px solid #dee2e6;
+            border-top: 1px solid var(--color-border);
         }
         .faq-content p {
-            margin: 10px 0;
+            margin: 12px 0;
         }
         .faq-content ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        .medical-reminder {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 4px;
+            margin: 12px 0;
+            padding-left: 24px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav class="primary-nav">
-            <a href="/">Home</a>
-            <a href="/how-it-works/">How It Works</a>
-            <a href="/features/">Features</a>
-            <a href="/pricing/">Pricing</a>
-            <a href="/faq/">FAQ</a>
-            <a href="/about/">About</a>
-            <a href="/support/">Support</a>
-            <a href="/legal/">Legal</a>
-        </nav>
-        
-        <header>
-            <h1>Frequently Asked Questions</h1>
-            <p>Common questions about AskHealth AI wellness coaching</p>
-        </header>
-        
-        <main>
-            <div class="medical-reminder">
-                <strong>⚠️ Important:</strong> AskHealth AI provides wellness coaching only, not medical advice. For medical questions, consult qualified healthcare professionals.
-            </div>
-            
-            <section class="faq-section">
-                <h2>🔒 Privacy & Data Handling</h2>
-                
-                <details>
-                    <summary>How is my health data protected?</summary>
-                    <div class="faq-content">
-                        <p>Your privacy is our top priority:</p>
-                        <ul>
-                            <li><strong>Apple HealthKit integration:</strong> Built on Apple's privacy-first platform</li>
-                            <li><strong>Your permission required:</strong> You control which data types to share</li>
-                            <li><strong>Temporary processing:</strong> Raw health data is not permanently stored</li>
-                            <li><strong>No data selling:</strong> We never sell your personal information</li>
-                            <li><strong>Revoke anytime:</strong> Change permissions through iOS Settings</li>
-                        </ul>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>What data does AskHealth AI access?</summary>
-                    <div class="faq-content">
-                        <p>Only with your explicit permission, we may access:</p>
-                        <ul>
-                            <li>Steps and daily activity</li>
-                            <li>Sleep duration and patterns</li>
-                            <li>Weight and body measurements</li>
-                            <li>Calories consumed and burned</li>
-                            <li>Heart rate data</li>
-                        </ul>
-                        <p><strong>You control exactly which data types to share.</strong></p>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>Is my conversation data stored?</summary>
-                    <div class="faq-content">
-                        <p>Yes, to provide continuous coaching:</p>
-                        <ul>
-                            <li>Conversation history is stored to maintain context</li>
-                            <li>This enables the AI to remember your wellness journey</li>
-                            <li>Raw health metrics are processed temporarily, not stored</li>
-                            <li>You can request data deletion by contacting support</li>
-                        </ul>
-                    </div>
-                </details>
-            </section>
-            
-            <section class="faq-section">
-                <h2>🏥 Medical Advice Limitations</h2>
-                
-                <details>
-                    <summary>Does AskHealth AI provide medical advice?</summary>
-                    <div class="faq-content">
-                        <p><strong>No. AskHealth AI does not provide medical advice, diagnosis, or treatment.</strong></p>
-                        <p>We provide:</p>
-                        <ul>
-                            <li>Wellness coaching and insights</li>
-                            <li>Educational health information</li>
-                            <li>General fitness and nutrition guidance</li>
-                            <li>Motivation and encouragement</li>
-                        </ul>
-                        <p><strong>Always consult healthcare professionals for medical decisions.</strong></p>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>Can I use this for medical emergencies?</summary>
-                    <div class="faq-content">
-                        <p><strong>No. For medical emergencies, call 911 immediately.</strong></p>
-                        <p>AskHealth AI is not designed to:</p>
-                        <ul>
-                            <li>Detect medical emergencies</li>
-                            <li>Provide emergency medical guidance</li>
-                            <li>Replace emergency medical services</li>
-                            <li>Diagnose urgent health conditions</li>
-                        </ul>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>What should I do for health concerns?</summary>
-                    <div class="faq-content">
-                        <p><strong>Consult qualified healthcare professionals for:</strong></p>
-                        <ul>
-                            <li>Medical advice and recommendations</li>
-                            <li>Diagnosis of health conditions</li>
-                            <li>Treatment decisions</li>
-                            <li>Medication changes</li>
-                            <li>Any health concerns or symptoms</li>
-                        </ul>
-                        <p>AskHealth AI complements but never replaces professional medical care.</p>
-                    </div>
-                </details>
-            </section>
-            
-            <section class="faq-section">
-                <h2>📱 Apple HealthKit Integration</h2>
-                
-                <details>
-                    <summary>How does HealthKit integration work?</summary>
-                    <div class="faq-content">
-                        <p>AskHealth AI integrates seamlessly with Apple Health:</p>
-                        <ul>
-                            <li><strong>Permission-based:</strong> You choose which data to share</li>
-                            <li><strong>Automatic sync:</strong> No manual data entry required</li>
-                            <li><strong>Real-time access:</strong> Get insights from current data</li>
-                            <li><strong>Device compatibility:</strong> Works with all HealthKit-compatible devices</li>
-                        </ul>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>Can I change my data permissions?</summary>
-                    <div class="faq-content">
-                        <p><strong>Yes, you have complete control:</strong></p>
-                        <ul>
-                            <li>Go to iOS Settings > Privacy & Security > Health</li>
-                            <li>Select "AskHealth AI"</li>
-                            <li>Turn data types on or off as desired</li>
-                            <li>Changes take effect immediately</li>
-                        </ul>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>What if I don't have much health data?</summary>
-                    <div class="faq-content">
-                        <p>AskHealth AI works with whatever data you have:</p>
-                        <ul>
-                            <li>Even basic step counting provides valuable insights</li>
-                            <li>More data enables more personalized coaching</li>
-                            <li>You can add more data sources over time</li>
-                            <li>The AI adapts to your available data</li>
-                        </ul>
-                    </div>
-                </details>
-            </section>
-            
-            <section class="faq-section">
-                <h2>🧪 Beta Testing Information</h2>
-                
-                <details>
-                    <summary>How do I join the beta?</summary>
-                    <div class="faq-content">
-                        <p>Beta access is currently limited:</p>
-                        <ul>
-                            <li>Join our waitlist for TestFlight invitations</li>
-                            <li>Beta testing is free during the testing period</li>
-                            <li>No real payments are processed (sandbox billing only)</li>
-                            <li>Help us improve the app with your feedback</li>
-                        </ul>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>What should I expect from beta software?</summary>
-                    <div class="faq-content">
-                        <p>As beta software, AskHealth AI may have:</p>
-                        <ul>
-                            <li>Occasional bugs or crashes</li>
-                            <li>Features that change or get updated</li>
-                            <li>Performance improvements over time</li>
-                            <li>Regular updates based on user feedback</li>
-                        </ul>
-                        <p>Your feedback helps us build a better final product!</p>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>When will the public version be available?</summary>
-                    <div class="faq-content">
-                        <p>We're targeting Q2 2025 for public App Store launch:</p>
-                        <ul>
-                            <li>Timeline depends on beta testing feedback</li>
-                            <li>App Store review process timing</li>
-                            <li>Final feature refinements</li>
-                            <li>Join our waitlist for launch updates</li>
-                        </ul>
-                    </div>
-                </details>
-            </section>
-            
-            <section class="faq-section">
-                <h2>🛠️ Technical Support</h2>
-                
-                <details>
-                    <summary>How do I get help with technical issues?</summary>
-                    <div class="faq-content">
-                        <p>For technical support:</p>
-                        <ul>
-                            <li>Visit our <a href="/support/">Support page</a> for common solutions</li>
-                            <li>Report issues through our GitHub repository</li>
-                            <li>Include your device model and iOS version</li>
-                            <li>Describe steps to reproduce the problem</li>
-                        </ul>
-                        <p>We aim to respond within 2-3 business days.</p>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>What devices are supported?</summary>
-                    <div class="faq-content">
-                        <p>AskHealth AI requires:</p>
-                        <ul>
-                            <li>iOS device (iPhone or iPad)</li>
-                            <li>iOS 14.0 or later</li>
-                            <li>Apple Health app installed</li>
-                            <li>HealthKit-compatible for best experience</li>
-                        </ul>
-                    </div>
-                </details>
-            </section>
-            
-            <div class="medical-reminder">
-                <strong>🏥 Remember:</strong> AskHealth AI is for wellness coaching and educational purposes only. Always consult qualified healthcare professionals for medical advice, diagnosis, and treatment.
-            </div>
-            
-            <div class="cta-section">
-                <a href="/support/" class="cta cta-primary">Contact Support</a>
-                <a href="#" class="cta cta-secondary">Join Beta Waitlist</a>
-            </div>
-        </main>
-        
-        <footer>
-            <p>&copy; <span id="year"></span> AskHealth AI (LLC pending). All rights reserved.</p>
-            <p>
-                <a href="/privacy/">Privacy</a>
-                <a href="/terms/">Terms</a>
+    <div class="page">
+        <div class="container">
+            <nav class="primary-nav">
+                <a href="/">Home</a>
+                <a href="/how-it-works/">How It Works</a>
+                <a href="/features/">Features</a>
+                <a href="/pricing/">Pricing</a>
+                <a href="/faq/" aria-current="page">FAQ</a>
+                <a href="/about/">About</a>
                 <a href="/support/">Support</a>
-                <a href="/medical/">Medical</a>
-                <a href="/legal/">Legal Hub</a>
-            </p>
-            <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-        </footer>
+                <a href="/legal/">Legal</a>
+            </nav>
+            
+            <header>
+                <h1>Frequently Asked Questions</h1>
+                <p>Common questions about AskHealth AI wellness coaching</p>
+            </header>
+            
+            <main>
+                <div class="callout">
+                    <strong>⚠️ Important:</strong> AskHealth AI provides wellness coaching only, not medical advice. For medical questions, consult qualified healthcare professionals.
+                </div>
+                
+                <section class="section">
+                    <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-shield-check"></use></svg>Privacy & Data Handling</h2>
+                    
+                    <details>
+                        <summary>How is my health data protected?</summary>
+                        <div class="faq-content">
+                            <p>Your privacy is our top priority:</p>
+                            <ul>
+                                <li><strong>Apple HealthKit integration:</strong> Built on Apple's privacy-first platform</li>
+                                <li><strong>Your permission required:</strong> You control which data types to share</li>
+                                <li><strong>Temporary processing:</strong> Raw health data is not permanently stored</li>
+                                <li><strong>No data selling:</strong> We never sell your personal information</li>
+                                <li><strong>Revoke anytime:</strong> Change permissions through iOS Settings</li>
+                            </ul>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>What data does AskHealth AI access?</summary>
+                        <div class="faq-content">
+                            <p>Only with your explicit permission, we may access:</p>
+                            <ul>
+                                <li>Steps and daily activity</li>
+                                <li>Sleep duration and patterns</li>
+                                <li>Weight and body measurements</li>
+                                <li>Calories consumed and burned</li>
+                                <li>Heart rate data</li>
+                            </ul>
+                            <p><strong>You control exactly which data types to share.</strong></p>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>Is my conversation data stored?</summary>
+                        <div class="faq-content">
+                            <p>Yes, to provide continuous coaching:</p>
+                            <ul>
+                                <li>Conversation history is stored to maintain context</li>
+                                <li>This enables the AI to remember your wellness journey</li>
+                                <li>Raw health metrics are processed temporarily, not stored</li>
+                                <li>You can request data deletion by contacting support</li>
+                            </ul>
+                        </div>
+                    </details>
+                </section>
+                
+                <section class="section">
+                    <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-triangle-alert"></use></svg>Medical Advice Limitations</h2>
+                    
+                    <details>
+                        <summary>Does AskHealth AI provide medical advice?</summary>
+                        <div class="faq-content">
+                            <p><strong>No. AskHealth AI does not provide medical advice, diagnosis, or treatment.</strong></p>
+                            <p>We provide:</p>
+                            <ul>
+                                <li>Wellness coaching and insights</li>
+                                <li>Educational health information</li>
+                                <li>General fitness and nutrition guidance</li>
+                                <li>Motivation and encouragement</li>
+                            </ul>
+                            <p><strong>Always consult healthcare professionals for medical decisions.</strong></p>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>Can I use this for medical emergencies?</summary>
+                        <div class="faq-content">
+                            <p><strong>No. For medical emergencies, call 911 immediately.</strong></p>
+                            <p>AskHealth AI is not designed to:</p>
+                            <ul>
+                                <li>Detect medical emergencies</li>
+                                <li>Provide emergency medical guidance</li>
+                                <li>Replace emergency medical services</li>
+                                <li>Diagnose urgent health conditions</li>
+                            </ul>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>What should I do for health concerns?</summary>
+                        <div class="faq-content">
+                            <p><strong>Consult qualified healthcare professionals for:</strong></p>
+                            <ul>
+                                <li>Medical advice and recommendations</li>
+                                <li>Diagnosis of health conditions</li>
+                                <li>Treatment decisions</li>
+                                <li>Medication changes</li>
+                                <li>Any health concerns or symptoms</li>
+                            </ul>
+                            <p>AskHealth AI complements but never replaces professional medical care.</p>
+                        </div>
+                    </details>
+                </section>
+                
+                <section class="section">
+                    <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-heart-pulse"></use></svg>Apple HealthKit Integration</h2>
+                    
+                    <details>
+                        <summary>How does HealthKit integration work?</summary>
+                        <div class="faq-content">
+                            <p>AskHealth AI integrates seamlessly with Apple Health:</p>
+                            <ul>
+                                <li><strong>Permission-based:</strong> You choose which data to share</li>
+                                <li><strong>Automatic sync:</strong> No manual data entry required</li>
+                                <li><strong>Real-time access:</strong> Get insights from current data</li>
+                                <li><strong>Device compatibility:</strong> Works with all HealthKit-compatible devices</li>
+                            </ul>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>Can I change my data permissions?</summary>
+                        <div class="faq-content">
+                            <p><strong>Yes, you have complete control:</strong></p>
+                            <ul>
+                                <li>Go to iOS Settings > Privacy & Security > Health</li>
+                                <li>Select "AskHealth AI"</li>
+                                <li>Turn data types on or off as desired</li>
+                                <li>Changes take effect immediately</li>
+                            </ul>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>What if I don't have much health data?</summary>
+                        <div class="faq-content">
+                            <p>AskHealth AI works with whatever data you have:</p>
+                            <ul>
+                                <li>Even basic step counting provides valuable insights</li>
+                                <li>More data enables more personalized coaching</li>
+                                <li>You can add more data sources over time</li>
+                                <li>The AI adapts to your available data</li>
+                            </ul>
+                        </div>
+                    </details>
+                </section>
+                
+                <section class="section">
+                    <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-beaker"></use></svg>Beta Testing Information</h2>
+                    
+                    <details>
+                        <summary>How do I join the beta?</summary>
+                        <div class="faq-content">
+                            <p>Beta access is currently limited:</p>
+                            <ul>
+                                <li>Join our waitlist for TestFlight invitations</li>
+                                <li>Beta testing is free during the testing period</li>
+                                <li>No real payments are processed (sandbox billing only)</li>
+                                <li>Help us improve the app with your feedback</li>
+                            </ul>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>What should I expect from beta software?</summary>
+                        <div class="faq-content">
+                            <p>As beta software, AskHealth AI may have:</p>
+                            <ul>
+                                <li>Occasional bugs or crashes</li>
+                                <li>Features that change or get updated</li>
+                                <li>Performance improvements over time</li>
+                                <li>Regular updates based on user feedback</li>
+                            </ul>
+                            <p>Your feedback helps us build a better final product!</p>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>When will the public version be available?</summary>
+                        <div class="faq-content">
+                            <p>We're targeting Q2 2025 for public App Store launch:</p>
+                            <ul>
+                                <li>Timeline depends on beta testing feedback</li>
+                                <li>App Store review process timing</li>
+                                <li>Final feature refinements</li>
+                                <li>Join our waitlist for launch updates</li>
+                            </ul>
+                        </div>
+                    </details>
+                </section>
+                
+                <section class="section">
+                    <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-life-buoy"></use></svg>Technical Support</h2>
+                    
+                    <details>
+                        <summary>How do I get help with technical issues?</summary>
+                        <div class="faq-content">
+                            <p>For technical support:</p>
+                            <ul>
+                                <li>Visit our <a href="/support/">Support page</a> for common solutions</li>
+                                <li>Report issues through our GitHub repository</li>
+                                <li>Include your device model and iOS version</li>
+                                <li>Describe steps to reproduce the problem</li>
+                            </ul>
+                            <p>We aim to respond within 2-3 business days.</p>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>What devices are supported?</summary>
+                        <div class="faq-content">
+                            <p>AskHealth AI requires:</p>
+                            <ul>
+                                <li>iOS device (iPhone or iPad)</li>
+                                <li>iOS 14.0 or later</li>
+                                <li>Apple Health app installed</li>
+                                <li>HealthKit-compatible for best experience</li>
+                            </ul>
+                        </div>
+                    </details>
+                </section>
+                
+                <div class="callout">
+                    <strong>🏥 Remember:</strong> AskHealth AI is for wellness coaching and educational purposes only. Always consult qualified healthcare professionals for medical advice, diagnosis, and treatment.
+                </div>
+                
+                <div class="cta-row">
+                    <a href="/support/" class="cta cta-primary">Contact Support</a>
+                    <a href="#" class="cta cta-secondary">Join Beta Waitlist</a>
+                </div>
+            </main>
+            
+            <footer>
+                <p>&copy; <span id="year"></span> AskHealth AI (LLC pending). All rights reserved.</p>
+                <p>
+                    <a href="/privacy/">Privacy</a>
+                    <a href="/terms/">Terms</a>
+                    <a href="/support/">Support</a>
+                    <a href="/medical/">Medical</a>
+                    <a href="/legal/">Legal Hub</a>
+                </p>
+                <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+            </footer>
+        </div>
     </div>
 </body>
 </html>

@@ -16,144 +16,118 @@
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/shared.css">
-    <style>
-        .step-detail {
-            background: white;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            padding: 30px;
-            margin: 20px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .step-detail h3 {
-            color: #667eea;
-            margin-top: 0;
-        }
-        .privacy-highlight {
-            background: #e8f5e8;
-            border-left: 4px solid #28a745;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .medical-reminder {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 4px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <nav class="primary-nav">
-            <a href="/">Home</a>
-            <a href="/how-it-works/">How It Works</a>
-            <a href="/features/">Features</a>
-            <a href="/pricing/">Pricing</a>
-            <a href="/faq/">FAQ</a>
-            <a href="/about/">About</a>
-            <a href="/support/">Support</a>
-            <a href="/legal/">Legal</a>
-        </nav>
-        
-        <header>
-            <h1>How AskHealth AI Works</h1>
-            <p>Your privacy-first wellness coaching experience</p>
-        </header>
-        
-        <main>
-            <div class="medical-reminder">
-                <strong>⚠️ Important:</strong> AskHealth AI provides wellness coaching only, not medical advice. For medical emergencies, call 911 immediately.
-            </div>
-            
-            <section class="process-overview">
-                <h2>Simple 3-Step Process</h2>
-                
-                <div class="step-detail">
-                    <h3>🔗 Step 1: Connect Your Health Data</h3>
-                    <p><strong>With your permission</strong>, AskHealth AI connects to Apple HealthKit to access your health metrics including:</p>
-                    <ul>
-                        <li>Daily steps and activity levels</li>
-                        <li>Sleep duration and patterns</li>
-                        <li>Weight and body measurements</li>
-                        <li>Calories consumed and burned</li>
-                        <li>Heart rate data</li>
-                    </ul>
-                    <div class="privacy-highlight">
-                        <strong>🔒 Privacy-First:</strong> You control exactly which data types to share. You can revoke access anytime through iOS Settings.
-                    </div>
-                </div>
-                
-                <div class="step-detail">
-                    <h3>🤖 Step 2: AI Analysis</h3>
-                    <p>Our AI analyzes your wellness patterns to provide personalized insights:</p>
-                    <ul>
-                        <li>Identifies trends in your activity and sleep</li>
-                        <li>Compares your metrics to healthy ranges</li>
-                        <li>Looks for opportunities to improve wellness</li>
-                        <li>Generates coaching recommendations</li>
-                    </ul>
-                    <p><strong>Note:</strong> All analysis focuses on general wellness principles, not your specific medical history.</p>
-                </div>
-                
-                <div class="step-detail">
-                    <h3>💬 Step 3: Personalized Coaching</h3>
-                    <p>Get actionable wellness insights through conversational AI:</p>
-                    <ul>
-                        <li>Ask questions about your health data</li>
-                        <li>Receive personalized coaching responses</li>
-                        <li>Get motivation and encouragement</li>
-                        <li>Learn about healthy lifestyle choices</li>
-                    </ul>
-                    <p><strong>Remember:</strong> This is educational wellness coaching, not medical diagnosis or treatment advice.</p>
-                </div>
-            </section>
-            
-            <section class="security-privacy">
-                <h2>🛡️ Privacy & Security</h2>
-                <div class="privacy-highlight">
-                    <h3>Your Data Stays Private</h3>
-                    <ul>
-                        <li><strong>Apple HealthKit Integration:</strong> Built with Apple's privacy-first health platform</li>
-                        <li><strong>No Data Selling:</strong> We never sell your personal health information</li>
-                        <li><strong>Secure Processing:</strong> Health data is processed temporarily and not permanently stored</li>
-                        <li><strong>Your Control:</strong> Manage permissions anytime through iOS Settings</li>
-                    </ul>
-                </div>
-            </section>
-            
-            <div class="medical-reminder">
-                <h3>🏥 Medical Disclaimer Reinforcement</h3>
-                <p><strong>AskHealth AI is not a medical device and does not provide medical advice, diagnosis, or treatment.</strong></p>
-                <p>Always consult qualified healthcare professionals for:</p>
-                <ul>
-                    <li>Medical advice and recommendations</li>
-                    <li>Diagnosis of health conditions</li>
-                    <li>Treatment decisions</li>
-                    <li>Medication changes</li>
-                    <li>Any health concerns or symptoms</li>
-                </ul>
-            </div>
-            
-            <div class="cta-section">
-                <a href="#" class="cta cta-primary">Download on TestFlight</a>
-                <a href="/features/" class="cta cta-secondary">Explore Features</a>
-            </div>
-        </main>
-        
-        <footer>
-            <p>&copy; <span id="year"></span> AskHealth AI (LLC pending). All rights reserved.</p>
-            <p>
-                <a href="/privacy/">Privacy</a>
-                <a href="/terms/">Terms</a>
+    <div class="page">
+        <div class="container">
+            <nav class="primary-nav">
+                <a href="/">Home</a>
+                <a href="/how-it-works/" aria-current="page">How It Works</a>
+                <a href="/features/">Features</a>
+                <a href="/pricing/">Pricing</a>
+                <a href="/faq/">FAQ</a>
+                <a href="/about/">About</a>
                 <a href="/support/">Support</a>
-                <a href="/medical/">Medical</a>
-                <a href="/legal/">Legal Hub</a>
-            </p>
-            <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-        </footer>
+                <a href="/legal/">Legal</a>
+            </nav>
+            
+            <header>
+                <h1>How AskHealth AI Works</h1>
+                <p>Your privacy-first wellness coaching experience</p>
+            </header>
+            
+            <main>
+                <div class="callout">
+                    <strong>⚠️ Important:</strong> AskHealth AI provides wellness coaching only, not medical advice. For medical emergencies, call 911 immediately.
+                </div>
+                
+                <section class="section">
+                    <h2>Simple 3-Step Process</h2>
+                    
+                    <div class="feature-card">
+                        <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-link"></use></svg>Step 1: Connect Your Health Data</h3>
+                        <p><strong>With your permission</strong>, AskHealth AI connects to Apple HealthKit to access your health metrics including:</p>
+                        <ul>
+                            <li>Daily steps and activity levels</li>
+                            <li>Sleep duration and patterns</li>
+                            <li>Weight and body measurements</li>
+                            <li>Calories consumed and burned</li>
+                            <li>Heart rate data</li>
+                        </ul>
+                        <div class="callout">
+                            <strong><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-hand"></use></svg>Privacy-First:</strong> You control exactly which data types to share. You can revoke access anytime through iOS Settings.
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-sparkles"></use></svg>Step 2: AI Analysis</h3>
+                        <p>Our AI analyzes your wellness patterns to provide personalized insights:</p>
+                        <ul>
+                            <li>Identifies trends in your activity and sleep</li>
+                            <li>Compares your metrics to healthy ranges</li>
+                            <li>Looks for opportunities to improve wellness</li>
+                            <li>Generates coaching recommendations</li>
+                        </ul>
+                        <p><strong>Note:</strong> All analysis focuses on general wellness principles, not your specific medical history.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-line-chart"></use></svg>Step 3: Personalized Coaching</h3>
+                        <p>Get actionable wellness insights through conversational AI:</p>
+                        <ul>
+                            <li>Ask questions about your health data</li>
+                            <li>Receive personalized coaching responses</li>
+                            <li>Get motivation and encouragement</li>
+                            <li>Learn about healthy lifestyle choices</li>
+                        </ul>
+                        <p><strong>Remember:</strong> This is educational wellness coaching, not medical diagnosis or treatment advice.</p>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-shield-check"></use></svg>Privacy & Security</h2>
+                    <div class="callout">
+                        <h3>Your Data Stays Private</h3>
+                        <ul>
+                            <li><strong>Apple HealthKit Integration:</strong> Built with Apple's privacy-first health platform</li>
+                            <li><strong>No Data Selling:</strong> We never sell your personal health information</li>
+                            <li><strong>Secure Processing:</strong> Health data is processed temporarily and not permanently stored</li>
+                            <li><strong>Your Control:</strong> Manage permissions anytime through iOS Settings</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <div class="callout">
+                    <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/lucide-sprite.svg#i-triangle-alert"></use></svg>Medical Disclaimer Reinforcement</h3>
+                    <p><strong>AskHealth AI is not a medical device and does not provide medical advice, diagnosis, or treatment.</strong></p>
+                    <p>Always consult qualified healthcare professionals for:</p>
+                    <ul>
+                        <li>Medical advice and recommendations</li>
+                        <li>Diagnosis of health conditions</li>
+                        <li>Treatment decisions</li>
+                        <li>Medication changes</li>
+                        <li>Any health concerns or symptoms</li>
+                    </ul>
+                </div>
+                
+                <div class="cta-row">
+                    <a href="#" class="cta cta-primary">Download on TestFlight</a>
+                    <a href="/features/" class="cta cta-secondary">Explore Features</a>
+                </div>
+            </main>
+            
+            <footer>
+                <p>&copy; <span id="year"></span> AskHealth AI (LLC pending). All rights reserved.</p>
+                <p>
+                    <a href="/privacy/">Privacy</a>
+                    <a href="/terms/">Terms</a>
+                    <a href="/support/">Support</a>
+                    <a href="/medical/">Medical</a>
+                    <a href="/legal/">Legal Hub</a>
+                </p>
+                <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+            </footer>
+        </div>
     </div>
 </body>
 </html>

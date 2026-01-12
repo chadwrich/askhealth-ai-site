@@ -156,6 +156,7 @@ header p {
     font-size: 1.125rem;
     color: var(--color-text-secondary);
     font-weight: 400;
+    max-width: none;
 }
 
 /* Typography System - Docs Grade */
@@ -238,22 +239,32 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
 
 /* Icon System */
 .icon {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     stroke: currentColor;
+    stroke-width: 2;
+    flex: 0 0 auto;
+    vertical-align: -0.125em;
     color: var(--color-primary);
-    vertical-align: -0.2em;
-    margin-right: 10px;
 }
 
 .icon-lg {
-    width: 28px;
-    height: 28px;
-    margin-right: 12px;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .icon-muted {
     color: var(--color-text-muted);
+}
+
+.icon-warning {
+    color: var(--color-warning);
 }
 
 .icon-invert {
